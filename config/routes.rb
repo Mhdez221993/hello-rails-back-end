@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  namespace :api do
+  namespace :api, default: {format: 'json'} do
     get 'greetings', to: 'greetings#index'
   end
 end
